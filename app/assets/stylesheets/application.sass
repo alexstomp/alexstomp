@@ -1,24 +1,36 @@
+// IMPORTS
+
+@import "base"
+
 // RESET STYLES
 
 a,p, h1, h2, h3, h4, h5, h6, label, input, th, td, li, ul
 	list-style: none
 	text-decoration: none
-	font: 13pt/16pt Arial, sans-serif
+	font: 13pt/16pt Verdana, Arial, sans-serif
 	color: #242424
 	margin: 0
 	padding: 0
 
 // WRAPPERS LAYOUT
 
-html
+html#home-html
 	background-image: image-url("bg_slice.jpg"), image-url("bg.jpg")
 	background-repeat: repeat-x, repeat
 	width: 100%
+
+html#page-html
+	background-image: image-url("bg_slice2.jpg"), image-url("bg.jpg")
+	background-repeat: repeat-x, repeat
+	width: 100%	
 
 body
 	width: 1190px
 	margin: 0 auto
 	text-align: center
+
+.maven, .maven *
+	font-family: 'Maven Pro'
 
 // NAVIGATION
 
@@ -26,8 +38,45 @@ body
 	padding: 37px 0 30px 0
 	width: 100%
 	background: image-url("bg_light.png") no-repeat center top
+	height: 33px
+	a
+		float: left
+		color: white
+		font-size: 17pt
+		&:hover
+			color: #58aae4
+	#github-icon
+		margin-left: 35px
 	#logo
-		width: 707px
+		width: 200px
+		margin-left: 323px
 		text-align: center
-	#navigation
+	#right-nav
 		float: right
+		a
+			float: right
+			margin-left: 35px
+
+// CAROUSEL
+
+#carousel-wrapper
+	float: left
+	width: 1190px
+	position: relative
+	margin-top: 36px
+	a.carousel-link
+		float: left
+		width: 270px
+		height: 180px
+		background: white
+		display: block
+		margin-left: 36px
+	a.row-first
+		margin-left: 0
+
+.bx-controls
+	.bx-next
+		margin-right: -75px
+	.bx-prev
+		margin-left: -75px
+

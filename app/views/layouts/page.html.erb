@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html id="page-html">
+<head>
+  <title>Alex Stomp | Web Developer</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="nav-wrapper">
+		<a href="<%= root_path %>" id="logo">
+			<img src="<%= asset_path('logo.png')%>"/>
+		</a>
+		<ul id="navigation" class="maven">
+			<li style="padding-right: 0;">
+				<a href="https://www.linkedin.com/in/alexstomp/">
+					<img src="<%= asset_path('in_icon.png')%>"/>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/alexstomp">
+					<img src="<%= asset_path('github_icon.png')%>"/>
+				</a>
+			</li>
+			<li>
+				<a href="mailto:stompy1208@gmail.com">
+					<img src="<%= asset_path('mail_icon.png')%>"/>
+					<span class="maven">Contact</span>
+				</a>
+			</li>
+			<li>
+				<a href="<%= blog_path %>">
+					<img src="<%= asset_path('bubble_icon.png')%>"/>
+					<span class="maven">Blog</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<%= yield %>
+
+</body>
+</html>
+

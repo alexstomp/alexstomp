@@ -30,27 +30,25 @@
 	<div id="carousel-wrapper">
 		<ul id="carousel" class="bxslider">
 			<li>
-				<a href="#" class="carousel-link row-first"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
-			</li>
-			<li>
-				<a href="#" class="carousel-link row-first"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
-			</li>
-			<li>
-				<a href="#" class="carousel-link row-first"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
-				<a href="#" class="carousel-link"></a>
+				<a href="<%= chalkthemup_path %>" class="carousel-link row-first">
+					<img src="<%= asset_path('ctu_thumb.png')%>"/>
+				</a>
+				<a href="<%= bacc_path %>" class="carousel-link">
+					<img src="<%= asset_path('bacc_thumb.png')%>"/>
+				</a>
+				<a href="<%= ete_print_path %>" class="carousel-link">
+					<img src="<%= asset_path('ete_print_thumb.png')%>"/>
+				</a>
+				<a href="<%= ete_web_path %>" class="carousel-link">
+					<img src="<%= asset_path('ete_web_thumb.png')%>"/>
+				</a>
 			</li>
 		</ul>
 	</div>
 
-	<%= yield %>
+	<div id="data-pjax-container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>

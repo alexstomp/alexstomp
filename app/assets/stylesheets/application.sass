@@ -1,16 +1,41 @@
 // IMPORTS
 
 @import "base"
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700)
 
 // RESET STYLES
 
 a,p, h1, h2, h3, h4, h5, h6, label, input, th, td, li, ul
 	list-style: none
 	text-decoration: none
-	font: 13pt/16pt Verdana, Arial, sans-serif
+	font: 13pt/16pt Arial, sans-serif
 	color: #242424
 	margin: 0
 	padding: 0
+
+h1, h2, h3, h4, h5
+	font-family: 'Droid Sans'
+	font-weight: bold
+
+h1
+	font-size: xx-large
+
+h2
+	font-size: x-large
+
+h3
+	font-size: larger
+
+h4
+	font-size: large
+
+p
+	font-size: 11pt
+	padding-top: 20px
+	line-height: 18pt
+
+.maven, .maven *
+	font-family: 'Maven Pro'
 
 // WRAPPERS LAYOUT
 
@@ -29,8 +54,11 @@ body
 	margin: 0 auto
 	text-align: center
 
-.maven, .maven *
-	font-family: 'Maven Pro'
+#content-wrap
+	padding-bottom: 100px
+	float: left
+	width: 1190px
+	text-align: left
 
 // NAVIGATION
 
@@ -79,4 +107,25 @@ body
 		margin-right: -75px
 	.bx-prev
 		margin-left: -75px
+
+// PORTFOLIO ENTRY CONTENT
+
+#right-preview
+	float: right
+	width: 600px
+	min-height: 270px
+	img
+		padding-bottom: 25px
+
+#content-wrap
+	h1
+		float: left
+		padding-top: 5px
+	p
+		float: left
+		clear: left
+		width: 555px
+
+
+
 

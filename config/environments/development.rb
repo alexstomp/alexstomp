@@ -39,5 +39,5 @@ Alexstomp::Application.configure do
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
   # Precompile additional assets
-  config.assets.precompile += %w( .svg .eot .woff .ttf .otf)
+  config.assets.precompile += %w( .otf *.css #.sass *.js )
 end

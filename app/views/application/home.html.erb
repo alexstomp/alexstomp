@@ -1,1 +1,21 @@
-<h1>Welcome, to my Portfolio!</h1>
+<div id="page-content">
+	<img src="<%= asset_path('home_slide.png')%>" id="home-slide"/>
+</div>
+
+
+<ul id="portfolio">
+	<li><!--
+		<a href="<%= ete_print_path %>">
+			<img src="<%= asset_path('ete_thumb.png')%>"/>
+		</a>-->
+		<a href="<%= bacc_path %>" class="row-first">
+			<img src="<%= asset_path('bacc_thumb.png')%>"/>
+		</a>
+		<a href="<%= chalkthemup_path %>">
+			<img src="<%= asset_path('ctu_thumb.png')%>"/>
+		</a>
+		<a href="<%= aquamu_path %>">
+			<img src="<%= asset_path('aquamu_thumb.png')%>"/>
+		</a>
+	</li>
+</ul>

@@ -40,8 +40,10 @@ p
 // WRAPPERS LAYOUT
 
 html#home-html
-	background-image: image-url("bg_slice.jpg"), image-url("bg.jpg")
-	background-repeat: repeat-x, repeat
+	background-image: image-url("bg_slice2.jpg"), image-url("bg_effec.jpg")
+	background-repeat: repeat-x, no-repeat
+	background-position: top, center top
+	background-color: #1c1c1c
 	width: 100%
 
 html#page-html
@@ -55,7 +57,11 @@ body
 	text-align: center
 
 #content-wrap
-	padding-bottom: 100px
+	float: left
+	width: 1190px
+	text-align: left
+
+#page-content
 	float: left
 	width: 1190px
 	text-align: left
@@ -87,20 +93,28 @@ body
 
 // CAROUSEL
 
-#carousel-wrapper
+#portfolio
 	float: left
+	clear: left
 	width: 1190px
 	position: relative
 	margin-top: 36px
-	a.carousel-link
+	li
 		float: left
-		width: 270px
-		height: 180px
-		background: white
-		display: block
-		margin-left: 36px
-	a.row-first
-		margin-left: 0
+		margin-bottom: 30px
+		a
+			float: left
+			width: 270px
+			height: 180px
+			background: white
+			display: block
+			margin-left: 36px
+			img
+				width: 260px
+				height: 170px
+				border: 5px solid white
+		a.row-first
+			margin-left: 0
 
 .bx-controls
 	.bx-next
@@ -126,6 +140,11 @@ body
 		clear: left
 		width: 555px
 
+#home-slide
+	float: left
+	width: 1190px
+	height: 300px
+	margin-top: 25px
 
 
 

@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html id="page-html">
+<html id="home-html">
 <head>
   <title>Alex Stomp | Web Developer</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag 'jquery.bxslider' %>
+  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'jquery.bxslider.min'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 	<div id="nav-wrapper">
+		<a href="https://www.linkedin.com/in/alexstomp/" id="linked-in-icon" class="maven">
+			Linkedin
+		</a>
+		<a href="https://github.com/alexstomp" id="github-icon" class="maven">
+			GitHub
+		</a>
 		<a href="<%= root_path %>" id="logo">
 			<img src="<%= asset_path('logo.png')%>"/>
 		</a>
-		<ul id="navigation" class="maven">
-			<li style="padding-right: 0;">
-				<a href="https://www.linkedin.com/in/alexstomp/">
-					<img src="<%= asset_path('in_icon.png')%>"/>
-				</a>
-			</li>
+		<div id="right-nav">
+			<a href="mailto:stompy1208@gmail.com" class="maven">Contact</a>
+			<a href="<%= resume_path %>" class="maven">Resume</a>
+			<!-- 
+			<a href="<%= blog_path %>" class="maven">Blog</a>
+			-->
+		</div>
+	</div>
+
+	<div id="data-pjax-container">
+		<%= yield %>
+	</div>
+	<!--
+	<div id="carousel-wrapper">
+		<ul id="carousel" class="bxslider">
 			<li>
-				<a href="https://github.com/alexstomp">
-					<img src="<%= asset_path('github_icon.png')%>"/>
+				<a href="<%= chalkthemup_path %>" class="carousel-link row-first">
+					<img src="<%= asset_path('ctu_thumb.png')%>"/>
 				</a>
-			</li>
-			<li>
-				<a href="mailto:stompy1208@gmail.com">
-					<img src="<%= asset_path('mail_icon.png')%>"/>
-					<span class="maven">Contact</span>
+				<a href="<%= bacc_path %>" class="carousel-link">
+					<img src="<%= asset_path('bacc_thumb.png')%>"/>
 				</a>
-			</li>
-			<li>
-				<a href="<%= blog_path %>">
-					<img src="<%= asset_path('bubble_icon.png')%>"/>
-					<span class="maven">Blog</span>
+				<a href="<%= ete_print_path %>" class="carousel-link">
+					<img src="<%= asset_path('ete_print_thumb.png')%>"/>
+				</a>
+				<a href="<%= ete_web_path %>" class="carousel-link">
+					<img src="<%= asset_path('ete_web_thumb.png')%>"/>
 				</a>
 			</li>
 		</ul>
 	</div>
-
-	<%= yield %>
-
+	-->
 </body>
 </html>
 

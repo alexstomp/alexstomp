@@ -15,10 +15,18 @@
 //= require_tree .
 
 $(document).ready(function(){
-	$('.bxslider').bxSlider({
+	$('.carousel').bxSlider({
 	  infiniteLoop: false,
 	  hideControlOnEnd: true,
 	  pager: false,
 	  auto: false
+	});
+});
+
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+	  infiniteLoop: false,
+	  hideControlOnEnd: true,
+	  auto: true
 	});
 });

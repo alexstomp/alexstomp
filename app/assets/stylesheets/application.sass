@@ -8,14 +8,16 @@
 a,p, h1, h2, h3, h4, h5, h6, label, input, th, td, li, ul
 	list-style: none
 	text-decoration: none
-	font: 13pt/16pt Arial, sans-serif
-	color: #242424
+	font: 13pt/16pt "Century Gothic", Arial, sans-serif
+	color: #989898
 	margin: 0
 	padding: 0
 
 h1, h2, h3, h4, h5
 	font-family: 'Droid Sans'
 	font-weight: bold
+	color: #efefef
+	text-shadow: black 0.1em 0.1em 0.2em
 
 h1
 	font-size: xx-large
@@ -33,22 +35,30 @@ p
 	font-size: 11pt
 	padding-top: 20px
 	line-height: 18pt
+	a
+		font-size: 11pt
+		color: orange
 
 .maven, .maven *
 	font-family: 'Maven Pro'
 
+.ccc
+	color: #ccc
+
 // WRAPPERS LAYOUT
 
 html#home-html
-	background-image: image-url("bg_slice2.jpg"), image-url("bg_effec.jpg")
+	background-image: image-url("bg_slice.jpg"), image-url("bg_effect.jpg")
 	background-repeat: repeat-x, no-repeat
 	background-position: top, center top
 	background-color: #1c1c1c
 	width: 100%
 
 html#page-html
-	background-image: image-url("bg_slice2.jpg"), image-url("bg.jpg")
-	background-repeat: repeat-x, repeat
+	background-image: image-url("bg_slice.jpg"), image-url("bg2.jpg")
+	background-repeat: repeat-x, no-repeat
+	background-position: top, center top
+	background-color: #171717
 	width: 100%	
 
 body
@@ -124,21 +134,47 @@ body
 
 // PORTFOLIO ENTRY CONTENT
 
-#right-preview
-	float: right
-	width: 600px
-	min-height: 270px
-	img
-		padding-bottom: 25px
+#slides
+	margin-top: 50px
+	margin-left: 245px
+	width: 700px
+	text-align: center
 
 #content-wrap
-	h1
+	padding-bottom: 500px
+	h1#title
+		width: 1190px
+		text-align: center
+		margin-bottom: 25px
 		float: left
 		padding-top: 5px
-	p
+	.left-text
 		float: left
-		clear: left
-		width: 555px
+		width: 500px
+		margin: 0 45px 0 50px
+	.right-text
+		float: right
+		width: 500px
+		margin: 0 50px 0 45px
+
+.my-part
+	float: left
+	clear: left
+	li
+		margin-left: 25px
+		padding-top: 5px
+		font-size: 11pt
+		list-style: disc outside none
+		color: #ccc
+
+.link-to-site
+	width: 500px
+	float: left
+	clear: left
+	margin-top: 20px
+	margin-bottom: 15px
+	color: #58aae4
+	font-size: 11pt
 
 #home-slide
 	float: left

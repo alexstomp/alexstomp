@@ -6,10 +6,13 @@ class PortfolioController < ApplicationController
 	def bacc
 	end
 
-	def ete_print
+	def ete
 	end
 
-	def ete_web
+	def aquamu
+	end
+
+	def trinity
 	end
 
 end

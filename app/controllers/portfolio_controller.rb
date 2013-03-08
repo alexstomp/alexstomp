@@ -15,4 +15,7 @@ class PortfolioController < ApplicationController
 	def trinity
 	end
 
+	def steinweg
+	end
+
 end

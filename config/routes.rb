@@ -9,5 +9,6 @@ Alexstomp::Application.routes.draw do
   match 'aquamu' => 'portfolio#aquamu', :as => :aquamu
   match 'trinity' => 'portfolio#trinity', :as => :trinity
   match 'ete' => 'portfolio#ete', :as => :ete
+  match 'steinweg' => 'portfolio#steinweg', :as => :steinweg
 
 end

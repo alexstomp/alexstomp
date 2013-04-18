@@ -8,5 +8,8 @@ class ApplicationController < ActionController::Base
 	def blog
 	end
 
+	def resume
+	end
+
   protect_from_forgery
 end

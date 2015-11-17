@@ -11,29 +11,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="no-scroll-container">
+        <div class="sidebar">
+            <h1 class="sidebar-header">Alex Stomp</h1>
+            <h3 class="sidebar-subheader">Designer</h3>
 
-	<div id="nav-wrapper">
-		<a href="https://www.linkedin.com/in/alexstomp/" id="linked-in-icon" class="maven">
-			Linkedin
-		</a>
-		<a href="https://github.com/alexstomp" id="github-icon" class="maven">
-			GitHub
-		</a>
-		<a href="<%= root_path %>" id="logo">
-			<img src="<%= asset_path('logo.png')%>"/>
-		</a>
-		<div id="right-nav">
-			<a href="mailto:stompy1208@gmail.com" class="maven">Contact</a>
-			<a href="<%= resume_path %>" class="maven">Resumé</a>
-			<!--
-			<a href="<%= blog_path %>" class="maven">Blog</a>
-			-->
-		</div>
-	</div>
+            <a class="sidebar-ref-icon" href="#github"></a>
+            <a class="sidebar-ref-icon" href="#angel"></a>
+            <a class="sidebar-ref-icon" href="#linkedin"></a>
+            <a class="sidebar-ref-icon" href="#99designs"></a>
 
-	<%= yield %>
+            <ul class="sidebar-nav">
+                <li class="sidebar-nav-link">Portfolio</li>
+                <li class="sidebar-nav-link">Blog</li>
+                <li class="sidebar-nav-link">Resume</li>
+            </ul>
+        </div>
 
+        <div class="content js-content">
+            <%= yield %>
+        </div>
+    </div>
 	<%= render 'layouts/analytics' %>
-
 </body>
 </html>

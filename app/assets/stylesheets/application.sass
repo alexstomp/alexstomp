@@ -1,186 +1,29 @@
-// IMPORTS
+// VARS
+
+$black: #242424
+$blue: #75b9fe
+
+// Used in App
+
+$bg: #fafafa
+$accent: $blue
+$border: #e6e6e6
+$link: #48A3FE
+
+// Responsive breakpoints
+
+$medium: 1200px
+$small: 700px
+
+// BASE PARTIALS
 
 @import "base"
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700)
+@import "reset"
+@import "typography"
+@import "layout"
+@import "form"
 
-// RESET STYLES
+// APP PARTIALS
 
-a,p, h1, h2, h3, h4, h5, h6, label, input, th, td, li, ul
-	list-style: none
-	text-decoration: none
-	font: 13pt/16pt "Century Gothic", Arial, sans-serif
-	color: #989898
-	margin: 0
-	padding: 0
-
-h1, h2, h3, h4, h5
-	font-family: 'Droid Sans'
-	font-weight: bold
-	color: #efefef
-	text-shadow: black 0.1em 0.1em 0.2em
-
-h1
-	font-size: xx-large
-
-h2
-	font-size: x-large
-
-h3
-	font-size: larger
-
-h4
-	font-size: large
-
-p
-	font-size: 11pt
-	padding-top: 20px
-	line-height: 18pt
-	a
-		font-size: 11pt
-		color: orange
-
-.maven, .maven *
-	font-family: 'Maven Pro'
-
-.ccc
-	color: #ccc
-
-// WRAPPERS LAYOUT
-
-html#home-html
-	background-image: image-url("bg_slice.jpg"), image-url("bg_effect.jpg")
-	background-repeat: repeat-x, no-repeat
-	background-position: top, center top
-	background-color: #1c1c1c
-	width: 100%
-
-html#page-html
-	background-image: image-url("bg_slice.jpg"), image-url("bg2.jpg")
-	background-repeat: repeat-x, no-repeat
-	background-position: top, center top
-	background-color: #171717
-	width: 100%	
-
-body
-	width: 1190px
-	margin: 0 auto
-	text-align: center
-
-#content-wrap
-	float: left
-	width: 1190px
-	text-align: left
-
-#page-content
-	float: left
-	width: 1190px
-	text-align: left
-
-// NAVIGATION
-
-#nav-wrapper
-	padding: 37px 0 30px 0
-	width: 100%
-	background: image-url("bg_light.png") no-repeat center top
-	height: 33px
-	a
-		float: left
-		color: white
-		font-size: 17pt
-		&:hover
-			color: #58aae4
-	#github-icon
-		margin-left: 35px
-	#logo
-		width: 200px
-		margin-left: 323px
-		text-align: center
-	#right-nav
-		float: right
-		a
-			float: right
-			margin-left: 35px
-
-// CAROUSEL
-
-#portfolio
-	float: left
-	clear: left
-	width: 1190px
-	position: relative
-	margin-top: 36px
-	li
-		float: left
-		margin-bottom: 30px
-		a
-			float: left
-			width: 270px
-			height: 180px
-			background: white
-			display: block
-			margin-left: 36px
-			img
-				width: 260px
-				height: 170px
-				border: 5px solid white
-		a.row-first
-			margin-left: 0
-
-.bx-controls
-	.bx-next
-		margin-right: -75px
-	.bx-prev
-		margin-left: -75px
-
-// PORTFOLIO ENTRY CONTENT
-
-#slides
-	margin-top: 50px
-	margin-left: 245px
-	width: 700px
-	text-align: center
-
-#content-wrap
-	padding-bottom: 500px
-	h1#title
-		width: 1190px
-		text-align: center
-		margin-bottom: 25px
-		float: left
-		padding-top: 5px
-	.left-text
-		float: left
-		width: 500px
-		margin: 0 45px 0 50px
-	.right-text
-		float: right
-		width: 500px
-		margin: 0 50px 0 45px
-
-.my-part
-	float: left
-	clear: left
-	li
-		margin-left: 25px
-		padding-top: 5px
-		font-size: 11pt
-		list-style: disc outside none
-		color: #ccc
-
-.link-to-site
-	width: 500px
-	float: left
-	clear: left
-	margin-top: 20px
-	margin-bottom: 15px
-	color: #58aae4
-	font-size: 11pt
-
-#home-slide
-	float: left
-	width: 1190px
-	height: 300px
-	margin-top: 25px
-
-
-
+@import "partials/sidebar"
+@import "partials/entries"

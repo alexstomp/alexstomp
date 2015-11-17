@@ -2,6 +2,7 @@
 <html id="home-html">
 <head>
   <title>Alex Stomp | Web Developer</title>
+  <link rel="icon" href="<%= asset_path('favicon.png') %>"></link>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= stylesheet_link_tag 'jquery.bxslider' %>
   <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' %>
@@ -24,12 +25,12 @@
 		<div id="right-nav">
 			<a href="mailto:stompy1208@gmail.com" class="maven">Contact</a>
 			<a href="<%= resume_path %>" class="maven">Resumé</a>
-			<!-- 
+			<!--
 			<a href="<%= blog_path %>" class="maven">Blog</a>
 			-->
 		</div>
 	</div>
-	
+
 	<%= yield %>
 
 	<%= render 'layouts/analytics' %>

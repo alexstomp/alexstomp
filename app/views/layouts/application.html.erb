@@ -11,10 +11,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div class="no-scroll-container">
-        <div class="sidebar">
+    <div class="sidebar">
+        <div class="sidebar-content">
             <h1 class="sidebar-header">Alex Stomp</h1>
-            <h3 class="sidebar-subheader">Designer</h3>
+            <h3 class="sidebar-subheader">Web Designer / Web Developer</h3>
 
             <a class="sidebar-ref-icon" href="#github"></a>
             <a class="sidebar-ref-icon" href="#angel"></a>
@@ -23,15 +23,16 @@
 
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">Portfolio</li>
-                <li class="sidebar-nav-link">Blog</li>
+                <!-- <li class="sidebar-nav-link">Blog</li> -->
                 <li class="sidebar-nav-link">Resume</li>
             </ul>
         </div>
-
-        <div class="content js-content">
-            <%= yield %>
-        </div>
     </div>
+
+    <div class="content js-content">
+        <%= yield %>
+    </div>
+
 	<%= render 'layouts/analytics' %>
 </body>
 </html>

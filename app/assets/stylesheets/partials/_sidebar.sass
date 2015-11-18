@@ -1,38 +1,49 @@
 // SIDEBAR
 
 .sidebar
-    float: left
-    height: calc(100vh - 100px)
-    padding-right: 50px
-    width: 350px
-    .sidebar-header
-        font-size: 3rem
-    .sidebar-subheader
-        color: #989898
-        font-size: 2rem
-        line-height: 3rem
-        font-weight: 400
-        padding-bottom: 5px
-    .sidebar-ref-icon
-        +roundedCorners()
-        background: #ccc
-        display: inline-block
-        float: left
-        height: 15px
-        margin-top: 10px
-        margin-right: 10px
-        width: 15px
-        &:hover
-            background: #bbb
-    .sidebar-nav
-        float: left
-        margin-top: 20px
-        display: block
-        width: 100%
-        .sidebar-nav-link
-            border-bottom: 1px solid #dedede
+    background: #33373d
+    height: 100%
+    padding: 0 50px
+    position: absolute
+    top: 0
+    text-align: right
+    width: 400px
+    .sidebar-content
+        float: right
+        margin-top: calc(50vh - 116px)
+        .sidebar-header
+            color: white
+            font-size: 3.5rem
+            line-height: 4.5rem
+        .sidebar-subheader
+            color: #85878b
+            font-size: 1.7rem
+            line-height: 2.7rem
+            font-weight: 200
+            padding-bottom: 5px
+        .sidebar-ref-icon
+            +roundedCorners()
+            background: #85878b
+            display: inline-block
+            float: right
+            height: 15px
+            margin-top: 10px
+            margin-left: 10px
+            width: 15px
+            &:hover
+                background: #bbb
+        .sidebar-nav
+            float: left
+            margin-top: 20px
             display: block
-            font-size: 1.6rem
-            padding: 15px 0
-            &:first-child
-                border-top: 1px solid #dedede
+            width: 100%
+            .sidebar-nav-link
+                color: #85878b
+                display: block
+                font-size: 1.4rem
+                font-weight: 400
+                padding: 10px 0 15px
+                text-transform: uppercase
+                &:hover
+                    color: lighten(#85878b, 25%)
+                    cursor: pointer

@@ -24,30 +24,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 // PAGE ELEMENTS & COMMON CLASSES
 
-html
-    background: url('../img/bg_overlay2.png') repeat $bg
+html, body
+    height: 100%
     overflow: hidden
-    position: relative
-    min-height: 100%
+
+body
+    position: fixed
     width: 100%
-    body
-        height: inherit
-        margin-right: -50px
-        padding-right: 50px
-        padding-left: 0
-        max-height: 100%
-        overflow: auto
-        overflow-x: hidden
-        text-align: center
-        width: calc(100% + 50px)
-        .no-scroll-container
-            display: inline-block
-            float: left
-            min-height: 100%
-            padding: 50px
-            position: relative
-            text-align: left
-            width: 100vw
-            .content
-                float: left
-                width: calc(100% - 350px)
+    .content
+        background-color: $bg
+        height: 100%
+        left: 400px
+        overflow: scroll
+        padding: 50px
+        position: absolute
+        width: calc(100% - 400px)

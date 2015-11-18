@@ -14,24 +14,29 @@
         .sidebar-header
             color: white
             font-size: 3.5rem
-            line-height: 4.5rem
+            line-height: 5rem
+            text-transform: none
         .sidebar-subheader
             color: #85878b
             font-size: 1.7rem
             line-height: 2.7rem
             font-weight: 200
             padding-bottom: 5px
+            text-transform: uppercase
         .sidebar-ref-icon
-            +roundedCorners()
-            background: #85878b
+            +transition(color, 0.2s)
+            color: #85878b
             display: inline-block
             float: right
             height: 15px
             margin-top: 10px
-            margin-left: 10px
-            width: 15px
+            margin-left: 20px
+            width: 16px
+            [class^="icon-"], [class*=" icon-"], [class^="path"], [class*=" path"]
+                color: inherit
+                font-size: 16px
             &:hover
-                background: #bbb
+                color: white
         .sidebar-nav
             float: left
             margin-top: 20px

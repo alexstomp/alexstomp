@@ -2,9 +2,12 @@
 
 .portfolio
     display: block
+    height: auto
+    max-width: $medium
     width: 100%
     .portfolio-header
-        border-bottom: 1px solid #efefef
+        +shadow(0px 1px 1px white)
+        border-bottom: 1px solid #e9e9e9
         display: block
         font-size: 17px
         font-weight: 800
@@ -13,7 +16,8 @@
         text-transform: uppercase
     .portfolio-separator
         background: $accent
-        border-right: 10px solid white
+        border: solid $bg
+        border-width: 1px 10px 1px 0px
         display: block
         height: 8px
         margin-top: -14px
@@ -22,14 +26,90 @@
     .content-list
         display: block
         .content-entry
+            +transition(background, 0.3s)
+            background: white
+            border-bottom: 1px solid #f0f0f0
             float: left
-            margin-bottom: 50px
-            padding: 0 25px 0 0
-            width: 50%
-            a
+            margin-bottom: 30px
+            margin-right: 15px
+            width: calc(33.33% - 20px)
+            .entry-thumb
                 float: left
+                height: auto
+                padding-bottom: 0
+                position: relative
                 width: 100%
-                img
+                .thumb
+                    float: left
                     width: 100%
-            &:nth-child(even)
-                padding: 0 0 0 25px
+                .entry-thumb-overlay
+                    background: rgba(117, 185, 254, 0.5)
+                    display: none
+                    height: 100%
+                    position: absolute
+                    right: 0
+                    top: 0
+                    text-align: center
+                    width: 100%
+                    .more-button
+                        +roundedCorners()
+                        +transform(translateY(-50%))
+                        +text-shadow(0 1px 0px darken($accent, 10%))
+                        background: rgba(117, 185, 254, 0.9)
+                        border-color: darken($accent, 5%)
+                        color: white
+                        display: inline-block
+                        font-size: 13px
+                        font-weight: 600
+                        padding: 5px 15px
+                        position: relative
+                        top: 50%
+                        text-align: center
+                        text-transform: uppercase
+                        .icon-more
+                            color: inherit
+                            font-size: 18px
+                            padding-left: 7px
+                            vertical-align: text-bottom
+                            width: 26px
+                        &:hover
+                            +text-shadow(0 1px 0px darken($accent, 20%))
+                            background: lighten($accent, 1%)
+                            border-color: $accent
+                            color: white
+            .entry-title
+                clear: left
+                color: inherit
+                display: block
+                font-size: 15px
+                font-weight: bold
+                padding: 15px 10px 0 10px
+                text-align: center
+            .entry-tags
+                clear: left
+                color: inherit
+                display: block
+                font-size: 12px
+                line-height: 20px
+                padding: 0 10px 15px
+                text-align: center
+            &:hover
+                cursor: pointer
+                .entry-thumb-overlay
+                    display: block
+            &:nth-child(3n + 1)
+                clear: left
+            &:nth-child(3n + 2)
+                float: left
+                margin: 0 0 0 15px
+            &:nth-child(3n + 3)
+                float: right
+                margin: 0 0 0 15px
+
+// MEDIUM
+
+@media screen and (max-width: $medium)
+
+// SMALL
+
+@media screen and (max-width: $small)

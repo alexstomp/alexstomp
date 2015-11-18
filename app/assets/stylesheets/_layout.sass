@@ -39,3 +39,20 @@ body
         padding: 50px
         position: absolute
         width: calc(100% - 400px)
+
+// MEDIUM
+
+@media screen and (min-width: $huge)
+    html
+        // removes the highlight color on tap in mobile devices
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    body
+        .content
+            left: 30%
+            width: 70%
+        .sidebar
+            width: 30%
+
+// SMALL
+
+@media screen and (max-width: $small)

@@ -6,7 +6,6 @@
     max-width: $medium
     width: 100%
     .portfolio-header
-        +shadow(0px 1px 1px white)
         border-bottom: 1px solid #e9e9e9
         display: block
         font-size: 17px
@@ -24,79 +23,35 @@
         margin-bottom: 50px
         width: 75px
     .content-list
+        +shadow(-1px 0px 0px white)
+        border-left: 1px solid #e9e9e9
+        padding-left: 30px
         display: block
         .content-entry
-            +transition(background, 0.3s)
-            background: white
-            border-bottom: 1px solid #f0f0f0
-            float: left
-            margin-bottom: 30px
-            margin-right: 15px
-            width: calc(33.33% - 20px)
-            .entry-thumb
-                float: left
-                height: auto
-                padding-bottom: 0
-                position: relative
-                width: 100%
-                .thumb
-                    float: left
-                    width: 100%
-                .entry-thumb-overlay
-                    background: rgba(117, 185, 254, 0.5)
-                    display: none
-                    height: 100%
-                    position: absolute
-                    right: 0
-                    top: 0
-                    text-align: center
-                    width: 100%
-                    .more-button
-                        +roundedCorners()
-                        +transform(translateY(-50%))
-                        +text-shadow(0 1px 0px darken($accent, 10%))
-                        background: rgba(117, 185, 254, 0.9)
-                        border-color: darken($accent, 5%)
-                        color: white
-                        display: inline-block
-                        font-size: 13px
-                        font-weight: 600
-                        padding: 5px 15px
-                        position: relative
-                        top: 50%
-                        text-align: center
-                        text-transform: uppercase
-                        .icon-more
-                            color: inherit
-                            font-size: 18px
-                            padding-left: 7px
-                            vertical-align: text-bottom
-                            width: 26px
-                        &:hover
-                            +text-shadow(0 1px 0px darken($accent, 20%))
-                            background: lighten($accent, 1%)
-                            border-color: $accent
-                            color: white
+            display: block
+            width: 100%
+            .entry-text
+                color: lighten($black, 20%)
+                font-size: 1.2rem
+                font-weight: 200
+                padding-bottom: 30px
             .entry-title
-                clear: left
                 color: inherit
                 display: block
-                font-size: 15px
+                font-size: 35px
                 font-weight: 800
-                padding: 15px 10px 0 10px
-                text-align: center
+                padding: 15px 10px 10px 0
+                text-transform: none
             .entry-tags
                 clear: left
                 color: lighten($black, 30%)
                 display: block
                 font-size: 12px
                 line-height: 20px
-                padding: 0 10px 15px
-                text-align: center
-            &:hover
-                cursor: pointer
-                .entry-thumb-overlay
-                    display: block
+                padding: 0 10px 15px 0
+                span
+                    font-size: inherit
+                    line-height: inherit
             &:nth-child(3n + 1)
                 clear: left
             &:nth-child(3n + 2)

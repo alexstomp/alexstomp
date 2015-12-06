@@ -1,14 +1,20 @@
 // FONTS
 
 @import url('https://i.icomoon.io/public/8597f7fd9f/Portfolio/style.css')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700')
+
+@include font-face('Futura', 'FUTRFW', 'FUTURA', '')
+// @include font-face('Mission Gothic', 'MissionGothicRegular', 'Mission Gothic', '')
+// @include font-face('Mission Gothic', 'MissionGothicThin', 'Mission Gothic', 'light')
+// @include font-face('Mission Gothic', 'MissionGothicBold', 'Mission Gothic', 'bold')
 
 // CONTENT RESET STYLES
 
 li, a, p, h1, h2, h3, h4, h5, h6, label, input, th, td, div, span, textarea, strong
     color: $black
-    font-family: "Open Sans"
-    font-size: 1.6rem
-    font-weight: 200
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+    font-size: 2rem
+    font-weight: 500
     letter-spacing: .03rem
     line-height: 2.7rem
     list-style: none outside none
@@ -20,13 +26,12 @@ li, a, p, h1, h2, h3, h4, h5, h6, label, input, th, td, div, span, textarea, str
 // HEADERS
 
 h1, h2, h3, h4, h5, h6
-    font-family: "Open Sans"
+    //font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif
+    letter-spacing: 0rem
 
 h1, h2
-    font-family: "Open Sans"
     letter-spacing: .1rem
-    font-size: 2.5rem
-    font-weight: bold
+    font-size: 1rem
     line-height: 3.2rem
     padding-bottom: 25px
     text-transform: uppercase
@@ -40,7 +45,6 @@ h1, h2
     font-weight: inherit
 
 p
-    font-size: 1.45rem
     font-weight: 200
     letter-spacing: .03rem
     line-height: 2.7rem

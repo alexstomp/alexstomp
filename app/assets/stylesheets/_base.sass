@@ -100,3 +100,16 @@
     background-size: $tuplePercent
     -moz-background-size: $tuplePercent
     -webkit-background-size: $tuplePercent
+
+@mixin font-face($style-name, $file, $family, $category:"")
+    @font-face
+        font-family: "#{$style-name}"
+        src: font-url('#{$file}.eot')
+        src: font-url('#{$file}.eot#iefix') format('embedded-opentype'), font-url('#{$file}.woff')  format('woff'), font-url('#{$file}.ttf')  format('truetype'), font-url('#{$file}.svg#{$style-name}') format('svg')
+    %#{$style-name}
+        font:
+            @if $category != ""
+                family: "#{$style-name}", #{$category}
+            @else
+                family: "#{$style-name}"
+                weight: normal

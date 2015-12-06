@@ -3,6 +3,10 @@
 <head>
   <title>Alex Stomp | Designer</title>
   <link rel="icon" href="<%= asset_path('favicon.png') %>"></link>
+
+  <script src="https://use.typekit.net/xxd1zkq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= stylesheet_link_tag 'jquery.bxslider' %>
   <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' %>
@@ -11,28 +15,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar-content">
-            <h1 class="sidebar-header">Alex Stomp</h1>
-            <h3 class="sidebar-subheader">Designer / Web Developer</h3>
 
-            <a class="sidebar-ref-icon" href="http://www.linkedin.com/in/alexstomp" target="_blank">
-                <i class="icon-linkedin"></i>
-            </a>
-            <a class="sidebar-ref-icon" href="https://github.com/alexstomp" target="_blank">
-                <i class="icon-github"></i>
-            </a>
-            <a class="sidebar-ref-icon" href="https://angel.co/alexstomp" target="_blank">
-                <i class="icon-angellist"></i>
-            </a>
+    <nav class="side-nav"></nav>
 
-            <ul class="sidebar-nav">
-                <li class="sidebar-nav-link">Portfolio</li>
-                <!-- <li class="sidebar-nav-link">Blog</li> -->
-                <li class="sidebar-nav-link">Resume</li>
-            </ul>
-        </div>
-    </div>
+	<nav class="main-nav">
+		<a href="#" class="main-nav-link">About</a>
+		<a href="#" class="main-nav-link active">Portfolio</a>
+		<a href="#" class="main-nav-link">Blog</a>
+        <div class="main-nav-underline"><span class="line-block"></span></div>
+	</nav>
 
     <div class="content js-content">
         <%= yield %>

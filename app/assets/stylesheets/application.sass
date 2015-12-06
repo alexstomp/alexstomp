@@ -3,14 +3,17 @@
 $black: #333333
 $blue: #75b9fe
 $orange: #ff962b
+$red: #d11536
+$dark_red: #b01328
 
 // Used in App
 
-$bg: #f8f8f8
-$accent: $blue
-$secondary: $orange
-$border: #e6e6e6
+$bg: #f2f2f2
+$border: #d9d9d9
 $link: #48A3FE
+$accent: $red
+$dark_accent: $dark_red
+$secondary: $orange
 
 // Responsive breakpoints
 
@@ -25,8 +28,12 @@ $huge: 1400px
 @import "typography"
 @import "layout"
 @import "form"
+@import "button"
 
 // APP PARTIALS
 
-@import "partials/sidebar"
-@import "partials/portfolio"
+@import "partials/nav"
+@import "partials/home"
+@import "partials/about"
+@import "partials/blog"
+@import "partials/contact"

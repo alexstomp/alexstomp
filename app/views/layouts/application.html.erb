@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html id="home-html">
-<head>
-  <title>Alex Stomp | Designer</title>
-  <link rel="icon" href="<%= asset_path('favicon.png') %>"></link>
+    <head>
+        <title>Alex Stomp | Designer</title>
+        <link rel="icon" href="<%= asset_path('favicon.png') %>"></link>
 
-  <script src="https://use.typekit.net/xxd1zkq.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body class="js-body">
+        <nav class="side-nav"></nav>
 
-  <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= stylesheet_link_tag 'jquery.bxslider' %>
-  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' %>
-  <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'jquery.bxslider.min'%>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    	<nav class="main-nav">
+    		<a href="#" class="main-nav-link">About</a>
+    		<a href="#" class="main-nav-link active">Portfolio</a>
+    		<a href="#" class="main-nav-link">Blog</a>
+            <div class="main-nav-underline"><span class="line-block"></span></div>
+    	</nav>
 
-    <nav class="side-nav"></nav>
+        <div class="content js-content">
+            <%= yield %>
+        </div>
 
-	<nav class="main-nav">
-		<a href="#" class="main-nav-link">About</a>
-		<a href="#" class="main-nav-link active">Portfolio</a>
-		<a href="#" class="main-nav-link">Blog</a>
-        <div class="main-nav-underline"><span class="line-block"></span></div>
-	</nav>
-
-    <div class="content js-content">
-        <%= yield %>
-    </div>
-
-	<%= render 'layouts/analytics' %>
-</body>
+        <%= render 'layouts/analytics' %>
+    </body>
 </html>

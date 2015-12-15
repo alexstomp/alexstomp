@@ -1,14 +1,31 @@
-source "http://bundler-api.herokuapp.com"
+source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
-
+# Server stack & languages
+ruby '2.1.3'
+gem 'rails', '4.1.4'
 gem 'pg'
+gem 'thin'
+gem 'pry'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+# Front-end frameworks
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'backbone-on-rails'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+
+# Heroku deploy fix
+group :production do
+    gem 'rails_12factor'
 end
 
-gem 'jquery-rails'
-gem 'newrelic_rpm'
+# Update localhost without restart
+group :development do
+    gem 'spring'
+end
+
+group :doc do
+    gem 'sdoc', '~> 0.4.0'
+end

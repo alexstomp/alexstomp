@@ -2,14 +2,15 @@
 
 .main-nav
     padding-top: 5vh
-    position: relative
+    position: fixed
     text-align: center
     z-index: 100
+    width: 100%
     .main-nav-link
+        @extend .futura
         +transition(color, 0.2s)
         color: #a1a1a1
         display: inline-block
-        font-family: "Futura", "Futura PT"
         font-size: 12px
         font-weight: 100
         letter-spacing: 0px

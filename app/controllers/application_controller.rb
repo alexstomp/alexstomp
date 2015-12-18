@@ -1,12 +1,15 @@
 class ApplicationController < ActionController::Base
 
+	# about
 	def home
 	end
 
-	def blog
+	# portfolio
+	def portfolio
 	end
 
-	def about
+	# blog
+	def blog
 	end
 
     protect_from_forgery

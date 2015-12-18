@@ -18,19 +18,13 @@
             this.original_title = document.title;
 
             /* Cached Elements */
-            this.header_el = this.$el.find('.js-header');
+            this.header_el = this.$el.find('.js-nav');
             this.content_el = this.$el.find('.js-content');
 
             /* Subviews */
             this.header_view = new PageViews.HeaderView({
                 'el': this.header_el
             });
-            this.page_scroller = this.content_el.fullpage({
-                'onLeave': this.on_scroll
-            });
-        },
-        on_scroll: function() {
-            // transition effects?
         }
     });
 

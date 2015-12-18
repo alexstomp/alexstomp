@@ -1,0 +1,60 @@
+// HEADER
+
+.header
+    display: block
+    padding: 50px 0
+    width: 100%
+    .header-center
+        margin: 0 auto
+        max-width: $medium
+        .name
+            @extend .futura
+            color: #515151
+            float: left
+            font-size: 16px
+            line-height: 50px
+            text-transform: uppercase
+            .icon-vampa
+                +transition(all, 0.4s)
+                color: darken($dark_accent, 10%)
+                font-size: 16px
+                padding: 0 5px
+                width: 23px
+            &:hover
+                .icon-vampa
+                    color: $dark_accent
+        .nav
+            float: right
+            .nav-link
+                @extend .futura
+                +transition(all, 0.2s)
+                border-top: 2px solid $border
+                color: #a1a1a1
+                display: inline-block
+                font-size: 10px
+                font-weight: 100
+                height: 50px
+                line-height: 50px
+                margin-left: 50px
+                text-align: right
+                text-transform: uppercase
+                width: 110px
+                &.active
+                    border-color: darken($border, 30%)
+                    color: #515151
+                &:hover
+                    border-color: darken($border, 35%)
+                    color: #313131
+
+// MEDIUM
+
+@media screen and (max-width: $medium)
+    .header
+        padding: 50px
+        .header-center
+            .nav .nav-link
+                margin-left: 25px
+
+// SMALL
+
+@media screen and (max-width: $small)

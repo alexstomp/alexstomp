@@ -9,14 +9,21 @@
         <%= csrf_meta_tags %>
     </head>
     <body class="js-body">
-        <nav class="side-nav"></nav>
+        <div class="header">
+            <div class="header-center">
+                <a href="<%= root_url() %>" class="name">
+                    Alex
+                    <i class="icon-vampa"></i>
+                    Stomp
+                </a>
 
-    	<nav class="main-nav">
-    		<a href="#" class="main-nav-link">About</a>
-    		<a href="#" class="main-nav-link active">Portfolio</a>
-    		<a href="#" class="main-nav-link">Blog</a>
-            <div class="main-nav-underline"><span class="line-block"></span></div>
-    	</nav>
+            	<nav class="nav js-nav">
+                    <a href="<%= root_url() %>" class="nav-link <%= current_page?(root_url()) ? 'active' : '' %>">About</a>
+            		<a href="<%= portfolio_url() %>" class="nav-link <%= current_page?(portfolio_url()) ? 'active' : '' %>">Portfolio</a>
+            		<a href="#" class="nav-link">Blog</a>
+            	</nav>
+            </div>
+        </div>
 
         <div class="content js-content">
             <%= yield %>

@@ -3,16 +3,16 @@
 @import url('https://i.icomoon.io/public/8597f7fd9f/Portfolio/style.css')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700')
 
-@include font-face('Futura', 'FUTRFW', 'FUTURA', '')
+@include font-face('Mission Gothic', 'MissionGothicBold', 'Mission Gothic', 'bold')
+@include font-face('Mission Gothic', 'MissionGothicThin', 'Mission Gothic', 'thin')
 
 // CONTENT RESET STYLES
 
 li, a, p, h1, h2, h3, h4, h5, h6, label, input, th, td, div, span, textarea, strong
     color: $black
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+    font-family: "Open Sans", HelveticaNeue, "Helvetica Neue", Hevetica, Arial, sans-serif
     font-size: 2rem
     font-weight: 500
-    letter-spacing: .03rem
     line-height: 2.7rem
     list-style: none outside none
     text-decoration: none
@@ -22,21 +22,14 @@ li, a, p, h1, h2, h3, h4, h5, h6, label, input, th, td, div, span, textarea, str
 
 // HEADERS
 
-.futura
-    font-family: "Futura", "Futura PT", "Helvetica Neue", Arial, sans-serif
-
 h1, h2, h3, h4, h5, h6
-    letter-spacing: 0rem
+    font-family: HelveticaNeue, "Helvetica Neue", Hevetica, Arial, sans-serif
 
-h1, h2
-    letter-spacing: .1rem
-    font-size: 1rem
-    line-height: 3.2rem
-    padding-bottom: 25px
-    text-transform: uppercase
-    word-spacing: .2rem
-    &.centered-header
-        text-align: center
+h1
+    font-size: 4rem
+    font-family: "Mission Gothic"
+    font-weight: thin
+    line-height: 6rem
 
 .accent-text
     color: $accent

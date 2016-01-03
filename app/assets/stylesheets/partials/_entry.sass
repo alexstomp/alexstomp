@@ -6,15 +6,18 @@
     border: 1px solid $border
     color: darken($border, 30%)
     display: inline-block
+    font-family: HelveticaNeue, "Helvetica Neue", Hevetica, Arial, sans-serif
     font-size: 11px
+    font-weight: 400
     float: right
-    height: 40px
+    height: 42px
     line-height: 20px
     margin-left: 15px
     padding: 10px 10px 10px 20px
     text-transform: uppercase
     span
         color: inherit
+        font-family: inherit
         font-size: inherit
         line-height: 1
     &.prev
@@ -28,16 +31,16 @@
         text-transform: uppercase
     .icon-chevron_left, .icon-chevron_right, .icon-list
         display: inline-block
-        font-size: 16px
+        font-size: 13px
         vertical-align: text-top
         width: 27px
         &.icon-list
             width: 22px
             padding-right: 5px
     .icon-chevron_left
-        padding-right: 10px
+        padding-right: 5px
     .icon-chevron_right
-        padding-left: 10px
+        padding-left: 5px
     &:hover
         background: rgba(255, 255, 255, 0.2)
         border-color: darken($border, 10%)
@@ -64,13 +67,14 @@
             color: white
             display: block
             font-size: 30px
-            font-weight: 200
+            font-weight: 600
+            letter-spacing: 0px
             padding-bottom: 30px
             text-transform: capitalize
         .entry-description
-            color: #c5c5c5
+            color: #cacaca
             display: block
-            font-size: 12px
+            font-size: 14px
             line-height: 25px
             margin-bottom: 30px
         .entry-button
@@ -78,6 +82,7 @@
             +transition(all, 0.2s)
             background: $accent
             color: darken($dark_accent, 17%)
+            font-family: HelveticaNeue, "Helvetica Neue", Hevetica, Arial, sans-serif
             font-size: 11px
             font-weight: 700
             float: left

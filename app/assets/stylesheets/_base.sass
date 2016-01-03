@@ -104,7 +104,7 @@
 @mixin font-face($style-name, $file, $family, $category:"")
     @font-face
         font-family: "#{$style-name}"
-        src: asset-url('#{$file}.ttf')  format('truetype')
+        src: asset-url('#{$file}.otf')  format('opentype')
     %#{$style-name}
         font:
             @if $category != ""

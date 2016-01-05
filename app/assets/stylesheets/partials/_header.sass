@@ -15,13 +15,12 @@
         .logo
             +transition(opacity, 0.1s)
             float: left
-            height: 4vw
+            height: 40px
             opacity: 0.9
             &:hover
                 opacity: 1
             .logo-image
                 height: inherit
-                min-height: 50px
         .nav
             float: right
             .nav-link
@@ -51,27 +50,36 @@
             font-size: 3rem
             font-weight: 100
             line-height: 5vw
-            padding: 5vw 0 7vw
+            padding: 8vw 0 6vw
 
 // MEDIUM
 
 @media screen and (max-width: $medium)
     .header
+        height: 500px
+        background-position: center center
+        background-size: cover
         .header-center
             .nav .nav-link
                 margin-left: 25px
+            .header-title
+                font-size: 3rem
+                padding: 150px 0 100px
 
 // SMALL
 
 @media screen and (max-width: $small)
     .header
         background: asset-url("slide_home.jpg")
-        background-position: bottom right
+        background-position: center center
         background-size: cover
         display: block
-        height: 100vh
+        height: 950px
         width: 100vw
         .header-center
+            .nav .nav-link
+                font-size: 11px
+                padding-left: 35px
             .header-title
                 font-size: 4rem
-                padding: 35vh 0
+                padding: 400px 0 100px

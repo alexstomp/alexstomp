@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @entry.id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @entry.title %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @entry.context %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @entry.description %>
+</p>
+
+<p>
+  <strong>Button link:</strong>
+  <%= @entry.button_link %>
+</p>
+
+<p>
+  <strong>Button text:</strong>
+  <%= @entry.button_text %>
+</p>
+
+<%= link_to 'Edit', edit_admin_entry_path(@entry) %> |
+<%= link_to 'Back', admin_entries_path %>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="home-html">
+<html id="admin-html">
     <head>
         <script src="https://use.typekit.net/xxd1zkq.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -21,8 +21,19 @@
             <% end %>
         <% end %>
 
-        <div class="content js-content">
-            <%= yield %>
+        <div class="admin content js-content">
+            <div class="header">
+                <div class="header-center">
+                    <a class="logo" href="<%= admin_root_url %>">
+                        <img class="logo-image" src="<%= asset_path('dark_logo.png') %>"/>
+                    </a>
+
+                    <%= render 'layouts/admin_nav' %>
+                </div>
+            </div>
+            <div class="content-wrap">
+                <%= yield %>
+            </div>
         </div>
 
         <%= render 'layouts/analytics' %>

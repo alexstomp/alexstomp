@@ -16,6 +16,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
+# App functionality
+gem 'devise'
+
 # Heroku deploy fix
 group :production do
     gem 'rails_12factor'

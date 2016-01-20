@@ -1,0 +1,5 @@
+<nav class="nav js-nav">
+    <a href="<%= admin_entries_url() %>" class="nav-link <%= current_page?(admin_entries_url()) || current_page?(admin_root_url()) ? 'active' : '' %>">Entries</a>
+    <a href="<%= admin_posts_url() %>" class="nav-link <%= current_page?(admin_posts_url()) ? 'active' : '' %>">Posts</a>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'nav-link'  %>
+</nav>

@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-	before_action :authenticate_user!, :only => ['admin']
 
 	# about
 	def home
@@ -11,14 +10,6 @@ class ApplicationController < ActionController::Base
 
 	# blog
 	def blog
-	end
-
-	# admin dash
-	def admin
-	end
-
-	# admin blog
-	def admin_blog
 	end
 
     protect_from_forgery

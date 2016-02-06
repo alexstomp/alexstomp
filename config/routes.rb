@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     get '/blog' => 'application#blog'
 
     namespace :admin do
-        resources :entries, :posts
+        resources :posts
 
-        root :to => 'entries#index'
+        root :to => 'posts#index'
     end
 end

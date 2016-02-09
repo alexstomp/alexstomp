@@ -7,46 +7,40 @@
 
             <%= render 'layouts/nav' %>
 
-            <h1 class="header-title">Some things I've worked on...</h1>
+            <h1 class="header-title">Some things I've worked on ...</h1>
         </div>
     </div>
 
     <div class="page-wrap">
-        <ul class="portfolio-entries">
-            <li class="entry">
-                <div class="entry-content">
-                    <img src="<%= asset_path('tempus_prev.jpg') %>" />
-                </div>
-                <span class="entry-description-wrap">
-                    <div class="entry-description">
-                        <h2 class="entry-title">Tempus Landing Page</h2>
-                        <p class="entry-owner">November 2015</p>
-                        <p class="entry-excerpt">
-                            As a <a href="http://lightbank.com" target="_blank">Lightbank</a> portfolio company employee, I got the opportunity to participate in
-                            the design process of this startup's new website. Tempus is a great company, and I am honored to
-                            have gotten the opportunity to leave my mark with them.
-                        </p>
-                        <a href="http://tempus.com" target="_blank" class="button outline">View Website</a>
-                    </div>
-                </span>
-            </li>
-            <li class="entry">
-                <div class="entry-content">
-                    <iframe src="https://player.vimeo.com/video/127509503?portrait=0" width="100%" height="421px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                <span class="entry-description-wrap">
-                    <div class="entry-description">
-                        <h2 class="entry-title">Product Launch Video</h2>
-                        <p class="entry-owner">Pi - June 2015</p>
-                        <p class="entry-excerpt">
-                            I was in charge of creating a short video for the landing page of our new product. The target
-                            audience were professors who we'd already talked to about our concept, and this was to give them
-                            a taste of what we were working on.
-                        </p>
-                        <a href="https://vimeo.com/127509503" target="_blank" class="button outline">View on Vimeo</a>
-                    </div>
-                </span>
-            </li>
-        </ul>
+        <h2 class="portfolio-section-header">// Work Experience</h2>
+        <div class="portfolio-entry full" id="portfolio-pi">
+            <img class="portfolio-entry-image" src="<%= asset_path('entries/pi.jpg') %>"/>
+            <div class="portfolio-entry-overlay">
+                <ul class="overlay-tools"><img class="tool-logo" src="<%= asset_path('entries/pi_logo.png') %>"/></ul>
+                <a href="#" class="button outline">View Gallery</a>
+            </div>
+        </div>
+        <h2 class="portfolio-section-header">// Projects & Freelance Work</h2>
+        <div class="portfolio-entry third" id="portfolio-design">
+            <h2 class="portfolio-tile-header">Design</h2>
+            <img src="<%= asset_path('entries/paint_brush.png') %>" class="icon-tile-image"/>
+            <div class="portfolio-entry-overlay">
+                <a href="#" class="button outline">View Gallery</a>
+            </div>
+        </div>
+        <div class="portfolio-entry third" id="portfolio-projects">
+            <h2 class="portfolio-tile-header">Ideas/Projects</h2>
+            <img src="<%= asset_path('entries/bulb.png') %>" class="icon-tile-image"/>
+            <div class="portfolio-entry-overlay">
+                <a href="#" class="button outline">View Gallery</a>
+            </div>
+        </div>
+        <div class="portfolio-entry third" id="portfolio-wordpress">
+            <h2 class="portfolio-tile-header">Wordpress</h2>
+            <img src="<%= asset_path('entries/wp.png') %>" class="icon-tile-image"/>
+            <div class="portfolio-entry-overlay">
+                <a href="#" class="button outline">View Gallery</a>
+            </div>
+        </div>
     </div>
 </div>

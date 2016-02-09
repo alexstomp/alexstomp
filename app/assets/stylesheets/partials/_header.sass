@@ -1,11 +1,11 @@
 // HEADER
 
 .header
-    background: asset-url("slide_home.jpg")
-    background-position: top left
-    background-size: contain
-    display: block
-    height: 36.5vw
+    background-image: asset_url("home_banner_image.jpg")
+    background-size: cover
+    background-position: bottom center
+    height: 60vw
+    max-height: 100vh
     width: 100vw
     .header-center
         margin: 0 auto
@@ -44,19 +44,18 @@
                     border-color: white
                     color: white
         .header-title
-            +text-shadow(0 0 2px black)
+            +text-shadow(0 0 4px #444444)
             color: white
             clear: both
-            font-size: 3rem
-            font-weight: 100
-            line-height: 5vw
-            padding: 8vw 0 6vw
+            font-size: 3.5rem
+            font-weight: 700
+            line-height: 4vw
+            padding: 20vw 0 6vw
 
 // MEDIUM
 
 @media screen and (max-width: $medium)
     .header
-        height: 500px
         background-position: center center
         background-size: cover
         .header-center
@@ -65,17 +64,16 @@
                 margin-left: 25px
             .header-title
                 font-size: 3rem
-                padding: 150px 0 100px
+                padding: 20vw 0 100px
 
 // SMALL
 
 @media screen and (max-width: $small)
     .header
-        background: asset-url("slide_home.jpg")
         background-position: center center
         background-size: cover
         display: block
-        height: 950px
+        height: 100vh
         width: 100vw
         .header-center
             .nav .nav-link
@@ -83,4 +81,4 @@
                 padding-left: 35px
             .header-title
                 font-size: 4rem
-                padding: 400px 0 100px
+                padding: 40vh 0 100px

@@ -20,22 +20,22 @@
         display: block
         width: 100%
         .portfolio-section-header
-            color: lighten($black, 30%)
+            color: lighten($black, 20%)
             clear: both
             font-size: 2rem
             font-weight: bold
-            line-height: 5rem
+            line-height: 3rem
             margin: 0 auto
             max-width: $medium
             padding: 50px 0
-            text-align: left
+            text-align: center
             text-transform: uppercase
             width: 100%
         .portfolio-entry
             +transition(background-color, 0.2s)
             border: 0
             float: left
-            height: 350px
+            height: 260px
             margin: 0
             overflow: hidden
             position: relative
@@ -43,14 +43,14 @@
             img.portfolio-entry-image
                 width: 100%
             .icon-tile-image
-                margin-top: 20px
+                margin-top: 50px
                 height: 100px
             .portfolio-tile-header
-                color: lighten($black, 30%)
+                color: lighten($black, 20%)
                 font-size: 2rem
                 font-weight: bold
-                line-height: 5rem
-                margin: 35px 0 0
+                line-height: 3rem
+                margin: 20px 0 0
                 text-align: center
                 text-transform: uppercase
                 width: 100%
@@ -76,6 +76,7 @@
                     .tool-logo
                         height: 90px
             &:hover
+                cursor: pointer
                 .portfolio-entry-overlay
                     display: block
             &.full
@@ -83,12 +84,16 @@
             &.half
                 width: 50%
             &.third
+                border-bottom: 1px solid $border
                 width: 33.3333%
+                &.middle
+                    border-right: 1px solid $border
+                    border-left: 1px solid $border
                 .portfolio-entry-overlay
                     .button.outline
-                        top: 250px
+                        top: 100px
         #portfolio-pi
-            background: asset-url('entries/pi.jpg')
+            background: asset-url('pi/pi.jpg')
             background-size: cover
             background-position: top center
             height: 500px
@@ -98,16 +103,16 @@
                 color: white
         #portfolio-design
             .portfolio-entry-overlay
-                background: rgba(168, 217, 180, 0.7)
+                background: rgba(168, 217, 180, 0.9)
         #portfolio-projects
             .portfolio-entry-overlay
-                background: rgba(220, 54, 40, 0.7)
+                background: rgba(220, 54, 40, 0.9)
         #portfolio-wordpress
             .portfolio-entry-overlay
-                background: rgba(30, 140, 190, 0.7)
+                background: rgba(30, 140, 190, 0.9)
 
 
-// MEDIUM 220 54 40
+// MEDIUM
 
 @media screen and (max-width: $medium)
     .portfolio

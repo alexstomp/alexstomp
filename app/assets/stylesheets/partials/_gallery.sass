@@ -1,0 +1,76 @@
+// GALLERY
+
+.gallery-overlay
+    background: rgba(0, 0, 0, 0.75)
+    display: none
+    height: 100vh
+    left: 0
+    position: fixed
+    top: 0
+    width: 100vw
+    z-index: 1000
+    .gallery
+        @extend .clearfix
+        height: 100vh
+        margin: 0 auto
+        margin-right: -50px
+        max-width: calc($medium + 100px)
+        padding-bottom: 50px
+        padding-right: 100px
+        position: relative
+        overflow-y: scroll
+        width: 100%
+        .gallery-content
+            +roundedCorners(3px)
+            background: white
+            float: right
+            margin-top: 50px
+            margin-left: 0
+            width: 65%
+        .gallery-sidebar
+            position: fixed
+            top: 50px
+            left: 50px
+            width: 30%
+            .gallery-sidebar-content
+                +roundedCorners(3px)
+                background: rgba(255, 255, 255, 0.85)
+                float: left
+                padding: 25px
+                h2
+                    font-size: 2.2rem
+                    font-weight: 800
+                    padding-bottom: 10px
+                p
+                    font-size: 13px                    
+            .gallery-close.button
+                clear: left
+                float: left
+                margin-top: 25px
+                &:hover
+                    cursor: pointer
+
+// MEDIUM
+
+@media screen and (max-width: $medium)
+    .gallery-overlay
+        .gallery
+            margin-top: 25px
+            margin-right: -25px
+            padding-bottom: 25px
+            padding-right: 50px
+            .button.outline
+                position: absolute
+                top: 25px
+                right: 25px
+            .gallery-sidebar
+                margin-top: 25px
+                position: static
+                width: 100%
+            .gallery-content
+                margin-top: 25px
+                width: 100%
+
+// SMALL
+
+@media screen and (max-width: $small)

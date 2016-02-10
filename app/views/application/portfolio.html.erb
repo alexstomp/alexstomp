@@ -1,5 +1,5 @@
 <div class="portfolio">
-    <div class="header">
+    <div class="header js-header">
         <div class="header-center">
             <a class="logo" href="<%= root_url %>">
                 <img class="logo-image" src="<%= asset_path('logo.png') %>"/>
@@ -9,37 +9,112 @@
 
             <h1 class="header-title">Some things I've worked on ...</h1>
         </div>
+        <a class="header-slider-link js-slide-section">
+            <span class="slider-link-text">Portfolio</span>
+            <i class="icon-expand_more"></i>
+        </a>
     </div>
 
-    <div class="page-wrap">
-        <h2 class="portfolio-section-header">// Work Experience</h2>
-        <div class="portfolio-entry full" id="portfolio-pi">
-            <div class="portfolio-entry-overlay">
-                <ul class="overlay-tools"><img class="tool-logo" src="<%= asset_path('entries/pi_logo.png') %>"/></ul>
-                <a href="#" class="button outline">View Gallery</a>
-            </div>
-        </div>
-        <h2 class="portfolio-section-header">// Projects & Freelance Work</h2>
+    <div class="page-wrap" id="page">
         <div class="portfolio-entry third" id="portfolio-design">
+            <img src="<%= asset_path('paint_brush.png') %>" class="icon-tile-image"/>
             <h2 class="portfolio-tile-header">Design</h2>
-            <img src="<%= asset_path('entries/paint_brush.png') %>" class="icon-tile-image"/>
-            <div class="portfolio-entry-overlay">
-                <a href="#" class="button outline">View Gallery</a>
+            <div class="portfolio-entry-overlay js-open-gallery design">
+                <a class="button outline">View Gallery</a>
             </div>
         </div>
-        <div class="portfolio-entry third" id="portfolio-projects">
+        <div class="portfolio-entry third middle" id="portfolio-projects">
+            <img src="<%= asset_path('bulb.png') %>" class="icon-tile-image"/>
             <h2 class="portfolio-tile-header">Ideas/Projects</h2>
-            <img src="<%= asset_path('entries/bulb.png') %>" class="icon-tile-image"/>
-            <div class="portfolio-entry-overlay">
-                <a href="#" class="button outline">View Gallery</a>
+            <div class="portfolio-entry-overlay js-open-gallery projects">
+                <a class="button outline">View Gallery</a>
             </div>
         </div>
         <div class="portfolio-entry third" id="portfolio-wordpress">
+            <img src="<%= asset_path('wp.png') %>" class="icon-tile-image"/>
             <h2 class="portfolio-tile-header">Wordpress</h2>
-            <img src="<%= asset_path('entries/wp.png') %>" class="icon-tile-image"/>
-            <div class="portfolio-entry-overlay">
-                <a href="#" class="button outline">View Gallery</a>
+            <div class="portfolio-entry-overlay js-open-gallery wordpress">
+                <a class="button outline">View Gallery</a>
             </div>
         </div>
+        <h2 class="portfolio-section-header">On the job ...</h2>
+        <div class="portfolio-entry full" id="portfolio-pi">
+            <div class="portfolio-entry-overlay js-open-gallery pi">
+                <ul class="overlay-tools"><img class="tool-logo" src="<%= asset_path('pi/pi_logo.png') %>"/></ul>
+                <a class="button outline">View Gallery</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gallery-overlay js-gallery-overlay design" id="design-gallery">
+    <div class="gallery">
+        <div class="gallery-sidebar">
+            <div class="gallery-sidebar-content">
+                <h2>Design</h2>
+                <p>
+                    On occasion, I get pulled onto projects strictly for designing the interface or general branding of
+                    the website.
+                </p>
+                <p>
+                    These are some examples of those types of projects.
+                </p>
+            </div>
+            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        </div>
+        <div class="gallery-content">
+
+        </div>
+    </div>
+</div>
+
+<div class="gallery-overlay js-gallery-overlay projects" id="projects-gallery">
+    <div class="gallery">
+        <div class="gallery-sidebar">
+            <div class="gallery-sidebar-content">
+                <h2>Ideas & Projects</h2>
+                <p>
+                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
+                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
+                    content for our site.
+                </p>
+            </div>
+            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        </div>
+        <div class="gallery-content"></div>
+    </div>
+</div>
+
+<div class="gallery-overlay js-gallery-overlay wordpress" id="wordpress-gallery">
+    <div class="gallery">
+        <div class="gallery-sidebar">
+            <div class="gallery-sidebar-content">
+                <h2>Wordpress</h2>
+                <p>
+                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
+                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
+                    content for our site.
+                </p>
+            </div>
+            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        </div>
+        <div class="gallery-content"></div>
+    </div>
+</div>
+
+<div class="gallery-overlay js-gallery-overlay pi" id="pi-gallery">
+    <div class="gallery">
+        <div class="gallery-sidebar">
+            <div class="gallery-sidebar-content">
+                <h2>Pi App</h2>
+                <p>
+                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
+                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
+                    content for our site.
+                </p>
+            </div>
+            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        </div>
+        <div class="gallery-content"></div>
     </div>
 </div>

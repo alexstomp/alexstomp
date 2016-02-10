@@ -6,7 +6,41 @@
     background-position: bottom center
     height: 60vw
     max-height: 100vh
+    position: relative
     width: 100vw
+    .header-slider-link
+        +transition(padding, 0.2s)
+        bottom: 0px
+        left: 0
+        padding-bottom: 50px
+        position: absolute
+        text-align: center
+        width: 100%
+        .slider-link-text
+            display: block
+            font-size: 14px
+            font-weight: 800
+            letter-spacing: 0.2rem
+            text-transform: uppercase
+            margin-bottom: 20px
+        .icon-expand_more
+            +roundedCorners(30px)
+            border: 1px solid white
+            display: inline-block
+            font-size: 4rem
+            height: 53px
+            padding: 5px
+            width: 53px
+        .slider-link-text, .icon-expand_more
+            +transition(all, 0.2s)
+            border-color: #d5d5d5
+            color: #d5d5d5
+        &:hover
+            cursor: pointer
+            padding-bottom: 55px
+            .slider-link-text, .icon-expand_more
+                border-color: white
+                color: white
     .header-center
         margin: 0 auto
         max-width: 1400px
@@ -26,12 +60,12 @@
             .nav-link
                 +transition(all, 0.2s)
                 border-top: 2px solid $border
-                color: #a1a1a1
+                color: #b9b9b9
                 display: inline-block
                 font-size: 12px
-                font-weight: 100
+                font-weight: 800
                 height: 50px
-                letter-spacing: 0.3rem
+                letter-spacing: 0.2rem
                 line-height: 50px
                 margin-left: 50px
                 padding-left: 50px
@@ -49,8 +83,11 @@
             clear: both
             font-size: 3.5rem
             font-weight: 700
-            line-height: 5rem
-            padding: 20vw 0 6vw
+            line-height: 4rem
+            left: 0
+            top: calc(45% - 2rem)
+            position: absolute
+            width: 100vw
 
 // MEDIUM
 
@@ -64,7 +101,7 @@
                 margin-left: 25px
             .header-title
                 font-size: 3rem
-                padding: 20vw 0 100px
+                top: calc(45% - 2rem)
 
 // SMALL
 
@@ -81,4 +118,3 @@
                 padding-left: 35px
             .header-title
                 font-size: 4rem
-                padding: 40vh 0 100px

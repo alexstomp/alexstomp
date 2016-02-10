@@ -20,7 +20,7 @@
             /* Cached Elements */
             this.alert_el = this.$el.find('.js-alert');
             this.content_el = this.$el.find('.js-content');
-            this.header_el = this.$el.find('.js-nav');
+            this.header_el = this.$el.find('.js-header');
 
             /* Subviews */
             this.header_view = new PageViews.HeaderView({

@@ -5,6 +5,7 @@
     */
 
     var AppViews = alexstomp.module('views.app');
+    var PageViews = alexstomp.module('views.page');
 
     /*
     * Custom Router
@@ -25,6 +26,9 @@
     */
 
     module.Router = module.AppRouter.extend({
+        routes: {
+            'portfolio': 'portfolio'
+        },
         initialize: function() {
             _.bindObj(this);
 
@@ -34,6 +38,11 @@
 
             /* create the central app view */
             this.app_view = new AppViews.AppView({
+                'el': this.body_el
+            });
+        },
+        portfolio: function() {
+            this.portfolio_view = new PageViews.PortfolioView({
                 'el': this.body_el
             });
         }

@@ -1,5 +1,5 @@
 <div class="home">
-    <div class="header">
+    <div class="header js-header">
         <div class="header-center">
             <a class="logo" href="<%= root_url %>">
                 <img class="logo-image" src="<%= asset_path('logo.png') %>"/>
@@ -8,12 +8,18 @@
             <%= render 'layouts/nav' %>
 
             <h1 class="header-title">Freelance Designer/Developer</h1>
-            <a href="#" class="about-contact-button button">Contact Me</a>
-            <a href="#" class="button">Download Resume</a>
+            <div class="header-buttons-wrap">
+                <a href="#" class="about-contact-button button">Contact Me</a>
+                <a href="#" class="button">Download Resume</a>
+            </div>
         </div>
+        <a class="header-slider-link js-slide-section">
+            <span class="slider-link-text">Skills & Proficiencies</span>
+            <i class="icon-expand_more"></i>
+        </a>
     </div>
 
-    <div class="page-wrap">
+    <div class="page-wrap" id="page">
         <div class="page-column">
             <h3 class="block-title">About Me</h3>
             <p class="block-text">

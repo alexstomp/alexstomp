@@ -25,7 +25,7 @@
         </div>
         <div class="portfolio-entry third middle" id="portfolio-projects">
             <img src="<%= asset_path('bulb.png') %>" class="icon-tile-image"/>
-            <h2 class="portfolio-tile-header">Ideas & Projects</h2>
+            <h2 class="portfolio-tile-header">Projects & Ideas</h2>
             <div class="portfolio-entry-overlay js-open-gallery projects">
                 <a class="button outline">View Gallery</a>
             </div>
@@ -49,72 +49,73 @@
 
 <div class="gallery-overlay js-gallery-overlay design" id="design-gallery">
     <div class="gallery">
-        <div class="gallery-sidebar">
-            <div class="gallery-sidebar-content">
-                <h2>Design</h2>
-                <p>
-                    On occasion, I get pulled onto projects strictly for designing the interface or general branding of
-                    the website.
-                </p>
-                <p>
-                    These are some examples of those types of projects.
-                </p>
-            </div>
-            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        <div class="gallery-header">
+            <h2 class="gallery-name">Design</h2>
+            <nav class="gallery-nav">
+                <!-- <a href="#" class="button outline"><i class="icon-expand_more"></i></a>
+                <a href="#" class="button outline"><i class="icon-expand_less"></i></a> -->
+                <a href="#" class="button outline js-close-gallery"><i class="icon-clear"></i> Close</a>
+            </nav>
         </div>
-        <div class="gallery-content">
-
-        </div>
+        <ul class="gallery-content">
+            <li class="gallery-item">
+                <p class="item-description">Did some work with Tempus when they got started.</p>
+                <img src="<%= asset_path('design/tempus_prev.jpg') %>"/>
+                <!-- <ul class="item-tools">
+                    <li class="tool-icon"><img src="<%= asset_path('tools/photoshop.png') %>"/></li>
+                </ul> -->
+            </li>
+        </ul>
     </div>
 </div>
 
 <div class="gallery-overlay js-gallery-overlay projects" id="projects-gallery">
     <div class="gallery">
-        <div class="gallery-sidebar">
-            <div class="gallery-sidebar-content">
-                <h2>Ideas & Projects</h2>
-                <p>
-                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
-                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
-                    content for our site.
-                </p>
-            </div>
-            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        <div class="gallery-header">
+            <h2 class="gallery-name">Projects & Ideas</h2>
+            <nav class="gallery-nav">
+                <a href="#" class="button outline js-close-gallery"><i class="icon-clear"></i> Close</a>
+            </nav>
         </div>
-        <div class="gallery-content"></div>
+        <ul class="gallery-content">
+            <li class="gallery-item">
+                <p class="item-description">Did some work with Tempus when they got started.</p>
+                <img src="<%= asset_path('design/tempus_prev.jpg') %>"/>
+            </li>
+        </ul>
     </div>
 </div>
 
 <div class="gallery-overlay js-gallery-overlay wordpress" id="wordpress-gallery">
     <div class="gallery">
-        <div class="gallery-sidebar">
-            <div class="gallery-sidebar-content">
-                <h2>Wordpress</h2>
-                <p>
-                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
-                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
-                    content for our site.
-                </p>
-            </div>
-            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        <div class="gallery-header">
+            <h2 class="gallery-name">Wordpress</h2>
+            <nav class="gallery-nav">
+                <a href="#" class="button outline js-close-gallery"><i class="icon-clear"></i> Close</a>
+            </nav>
         </div>
-        <div class="gallery-content"></div>
+        <ul class="gallery-content">
+            <li class="gallery-item">
+                <p class="item-description">Did some work with Tempus when they got started.</p>
+                <img src="<%= asset_path('design/tempus_prev.jpg') %>"/>
+            </li>
+        </ul>
     </div>
 </div>
 
 <div class="gallery-overlay js-gallery-overlay pi" id="pi-gallery">
     <div class="gallery">
-        <div class="gallery-sidebar">
-            <div class="gallery-sidebar-content">
-                <h2>Pi App</h2>
-                <p>
-                    We gained lots of traction fast and landed a radio show on the college radio station WPGU on sundays at 11.
-                    We also accumulated a total of 47 authors from over 7 different colleges accross the country to provide
-                    content for our site.
-                </p>
-            </div>
-            <a class="gallery-close js-close-gallery button outline">Close Gallery</a>
+        <div class="gallery-header">
+            <h2 class="gallery-name">Pi & CF</h2>
+            <nav class="gallery-nav">
+                <a href="#" class="button outline js-close-gallery"><i class="icon-clear"></i> Close</a>
+            </nav>
         </div>
-        <div class="gallery-content"></div>
+        <ul class="gallery-content">
+            <li class="gallery-item">
+                <p class="item-description">Did some work with Tempus when they got started.</p>
+                <img src="<%= asset_path('design/tempus_prev.jpg') %>"/>
+            </li>
+        </ul>
     </div>
 </div>

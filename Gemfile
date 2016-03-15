@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Server stack & languages
-ruby '2.1.3'
+ruby '2.2.1'
 gem 'rails', '4.1.4'
 gem 'pg'
 gem 'thin'
